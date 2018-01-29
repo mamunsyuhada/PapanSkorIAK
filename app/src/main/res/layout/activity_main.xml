@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true"
+    android:layout_gravity="center"
+    android:gravity="center"
+    tools:context="xyz.mamunsyuhada.papanskoriak.MainActivity">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginEnd="15dp"
+            android:textSize="50pt"
+            android:text="0"
+            android:id="@+id/tvNilaiA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="50pt"
+            android:text=" - "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginStart="15dp"
+            android:textSize="50pt"
+            android:text="0"
+            android:id="@+id/tvNilaiB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="10pt"
+            android:text="28"
+            android:id="@+id/tvJam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="10pt"
+            android:text=" : "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="10pt"
+            android:text="01"
+            android:id="@+id/tvMenit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="10pt"
+            android:text=" : "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="10pt"
+            android:text="38"
+            android:id="@+id/tvDetik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="10pt"
+            android:text="28"
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="10pt"
+            android:text="/"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="10pt"
+            android:text="01"
+            android:id="@+id/tvMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="10pt"
+            android:text="/"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="10pt"
+            android:text="2018"
+            android:id="@+id/tvYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:textSize="7pt"
+        android:layout_marginBottom="10dp"
+        android:textAlignment="center"
+        android:text="Indonesia Android Kejar Batch 3 Periode 4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:id="@+id/view"
+            android:background="@color/colorPrimary"
+            android:layout_centerHorizontal="true"
+            android:layout_width="2dp"
+            android:layout_height="150dp"/>
+
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40dp"
+            android:orientation="vertical"
+            android:layout_toLeftOf="@+id/view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:onClick="tambahTigaKiri"
+                android:id="@+id/btnTambahTigaKiri"
+                android:text="+ 3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:onClick="tambahDuaKiri"
+                android:id="@+id/btnTambahDuaKiri"
+                android:text="+ 2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:onClick="tambahSatuKiri"
+                android:id="@+id/btnTambahSatuKiri"
+                android:text="+ 1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:orientation="vertical"
+            android:layout_toEndOf="@+id/view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:onClick="tambahTigaKanan"
+                android:id="@+id/btnTambahTigaKanan"
+                android:text="+ 3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:onClick="tambahDuaKanan"
+                android:id="@+id/btnTambahDuaKanan"
+                android:text="+ 2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:onClick="tambahSatuKanan"
+                android:id="@+id/btnTambahSatuKanan"
+                android:text="+ 1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+    <Button
+        android:onClick="resetNilai"
+        android:text="Reset"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
